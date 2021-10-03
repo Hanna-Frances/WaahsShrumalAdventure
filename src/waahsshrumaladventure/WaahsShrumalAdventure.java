@@ -18,7 +18,8 @@ public class WaahsShrumalAdventure {
         
         //Welcome message.
         System.out.println("WELCOME TO WAAH'S SHRUMAL ADVENTURE");
-        
+
+
         //Print instructions for controlling the text speed.
         System.out.println("When you see ^^, enter anything to continue. "
                 + "\n^^");
@@ -85,9 +86,8 @@ public class WaahsShrumalAdventure {
     public static void dialogue(String fileName) throws IOException{
         
         //Make a file of the appropriate section of text.
-        File file = new File("C:\\Users\\hanna\\Documents\\Programming\\"
-                + "NetBeansProjects\\Java\\Gr 12 Computer Science\\"
-                + "WaahsShrumalAdventure\\dialogue\\" + fileName + ".txt");
+        String filePath = new File("").getAbsolutePath();
+        File file = new File(filePath + "\\dialogue\\" + fileName + ".txt");
         
         //Make scanner for file.
         Scanner readFile = new Scanner(file);
